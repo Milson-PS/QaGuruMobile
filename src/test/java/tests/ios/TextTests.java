@@ -7,7 +7,7 @@ import tests.TestBase;
 
 @Tag("iOS")
 public class TextTests extends TestBase {
-    private final String textToInput = "Hello, QA.GURU!";
+    private final String textToInput = "Test";
 
     @Test
     @DisplayName("Enter word and check in app UI Elements")
