@@ -9,11 +9,20 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import screens.IosTextScreen;
+import screens.MainScreen;
+import screens.SearchResultScreen;
+import screens.SearchScreen;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
+    public MainScreen mainScreen = new MainScreen();
+    public SearchScreen searchScreen = new SearchScreen();
+    public SearchResultScreen searchResultScreen = new SearchResultScreen();
+    public IosTextScreen iosElements = new IosTextScreen();
+
     @BeforeAll
     static void beforeAll() {
         Configuration.browser = BrowserstackDriver.class.getName();
